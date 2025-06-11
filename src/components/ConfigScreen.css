@@ -1,0 +1,247 @@
+.config-screen {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.config-container {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.config-header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.config-header h2 {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.config-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Left Panel */
+.left-panel {
+  background: #7CB342;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.leadgen-section h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.leadgen-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.vm-configs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vm-config-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.vm-config-item label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.vm-select {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  background: white;
+  color: #333;
+}
+
+/* Right Panel */
+.right-panel {
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-ads-section {
+  background: #FFB6C1;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tab-header {
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: #FF69B4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #FF1493;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.metric-item label {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.metric-item input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Funnel Diagram */
+.funnel-diagram {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.funnel-diagram h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+  text-align: center;
+}
+
+.funnel-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.funnel-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.step-box {
+  background: #FFB6C1;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  min-width: 80px;
+}
+
+.step-value {
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 18px;
+  color: #666;
+  margin: 0 5px;
+}
+
+/* Actions */
+.config-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #545b62;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .config-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .funnel-flow {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .arrow {
+    transform: rotate(90deg);
+  }
+} 
